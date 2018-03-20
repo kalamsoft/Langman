@@ -1,39 +1,39 @@
-# lman
+# Langman
 Manage translations in Laravel App
 
-Lman is used to manage your translation using web. You can `add new translation` or `edit the translation phrases`  or `delete the translation` of your Laravel App.
+Langman is used to manage your translation using web. You can `add new translation` or `edit the translation phrases`  or `delete the translation` of your Laravel App.
  
-![Lman](https://i.imgur.com/nfY7xzK.gif)
+![Langman](https://i.imgur.com/nfY7xzK.gif)
 ----------
 
 ## Installation
 
-- [Lman on Packagist](https://packagist.org/packages/prabakaran-t/lman)
-- [Lman on GitHub](https://github.com/Prabakaran-t/lman)
+- [Langman on Packagist](https://packagist.org/packages/kalamsoft/langman)
+- [Langman on GitHub](https://github.com/kalamsoft/Langman)
 
 To get the latest version of Currency simply require it in your `composer.json` file.
 
 ~~~
-"prabakaran-t/lman": "dev-master"
+"kalamsoft/langman": "1.0.*-dev"
 ~~~
 or simply from console
 ~~~
-composer require prabakaran-t/lman
+composer require kalamsoft/langman
 ~~~
-Once Lman is installed you need to register the service provider with the application. Open up `config/app.php` and find the `providers` key.
+Once Langman is installed you need to register the service provider with the application. Open up `config/app.php` and find the `providers` key.
 
 ~~~php
 'providers' => [
-    Decipher\Lman\LanguageServiceProvider::class,
+    Kalamsoft\Langman\LangServiceProvider::class,
 ]
 ~~~
 
-Lman also ships with a facade which provides the static functions for manage translations. You can register the facade in the `aliases` key of your `config/app.php` file.
+Langman also ships with a facade which provides the static functions for manage translations. You can register the facade in the `aliases` key of your `config/app.php` file.
 
 ~~~php
 'aliases' => [
 
-    'Lman' => Decipher\Lman\Lman::class,
+    'Langman' => Kalamsoft\Langman\Langman::class,
 
 ]
 ~~~
@@ -83,11 +83,11 @@ this will holds the chosen language across the app.
 
 ## Rendering Available Translations
 
-By default Lman uses the bootstrap css framework for managing translations. If you want to customize you can find the view files under `resources\view\translation`.
+By default Langman uses the bootstrap css framework for managing translations. If you want to customize you can find the view files under `resources\view\translation`.
 
 If you want to render available translations in your app
 ~~~
-{!! Lman::TranslationSwitch() !!}
+{!! Langman::TranslationSwitch() !!}
 ~~~
 It will render the following
 ~~~
