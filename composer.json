@@ -1,0 +1,31 @@
+{
+    "name": "kalamsoft/langman",
+    "description": "Manage translations in Laravel App",
+    "keywords": [
+        "translation",
+        "language",
+        "locale"
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kalamsoft\\Langman\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prabakaran T",
+            "email": "mailtodecipher@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
+    },
+    "minimum-stability": "dev"
+}
